@@ -38,7 +38,6 @@
             for (int j = 0; j < cpt; j++) {
                 out.print("*");
             }
-            out.println("<br>");
         }
     }
 %>
@@ -55,7 +54,6 @@ if (valeur != null && !valeur.isEmpty()) {
         for (int j = 0; j < i; j++) {
             System.out.print("*");
         }
-        System.out.println();
     }
 }
 
