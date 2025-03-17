@@ -29,20 +29,59 @@
             <p> <%= intValeur1 %>  est égale à <%= intValeur2 %>.</p>
         <% } %>
    
-    
+    <% } %>   
 <h2>Exercice 1 : Comparaison 1</h2>
 <p>Ecrire un programme qui demande à l'utilisateur de saisir 3 valeurs (des chiffres),</br>
 A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
-Exemple :</br>
-A = 10</br>
-B = 20</br>
-C = 15</br>
-Oui C est compris entre A et B</p>
+</br>
+
+<form action="#" method="post">
+    <p>Saisir la valeur A : <input type="text" id="inputValeur" name="valeurA">
+    <p>Saisir la valeur B : <input type="text" id="inputValeur" name="valeurB">
+    <p>Saisir la valeur C : <input type="text" id="inputValeur" name="valeurC">
+    <p><input type="submit" value="Afficher">
+</form>
+
+<%
+String valeurA = request.getParameter("valeurA"); 
+String valeurB = request.getParameter("valeurB");
+String valeurC = request.getParameter("valeurC");
+
+
+if (valeurA != null && valeurB != null && valeurC != null) { 
+
+    int valeurA = Integer.parseInt(valeurA);
+    int valeurB = Integer.parseInt(valeurB);
+    int valeurC = Integer.parseInt(valeurC);
+
+    if ((valeurC >= valeurA && valeurC <= valeurB) || (valeurC >= valeurB && valeurC <= valeurA)) {
+        sytem.out.println("La valeur de C est comprise entre A et B.");
+    } else {
+        sytem.out.println("La valeur de C n'est pas comprise entre A et B.");
+    }
+}
+
+%>
 
 <h2>Exercice 2 : Pair ou Impair ?</h2>
 <p>Écrivez un programme pour vérifier si un nombre est pair ou impair en utilisant une structure if</p>
 
-<% } %>
+<p>Utilisation de la valeur 1 donné par l'Utilisateur en haut de la page</p>
+<%
+
+String valeur1 = request.getParameter("valeur1");
+if (valeur1 != null) {
+
+        int nombre = Integer.parseInt(nombreStr);
+
+        if (valeur1 % 2 == 0) {
+            out.print("<p>Le nombre " + nombre + " est pair.</p>");
+        } else {
+            out.print("<p>Le nombre " + nombre + " est impair.</p>");
+        }
+}
+%>
+
 <p><a href="index.html">Retour au sommaire</a></p>
 </body>
 </html>
