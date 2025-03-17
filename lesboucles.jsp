@@ -30,10 +30,16 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 
 <p>
-    <pre><code>
-      
-    </code></pre>
-
+         <%-- if (valeur != null && !valeur.isEmpty()) { %>
+            <%-- int cpt = Integer.parseInt(valeur); %>
+                
+            <%--   for (int i = 0; i < n; i++) { %>
+                <%--      for (int j = 0; j < n; j++) { %>
+                    <%--       System.out.print("*"); %>
+                    <%--    } %>
+                    <%--   System.out.println(); %>
+        <%-- } %>
+        <%--  } %>
 </p>
 
 <h2>Exercice 2 : Triangle rectangle gauche</h2>
