@@ -33,7 +33,7 @@
 <p>
 <%
     if (valeur != null && !valeur.isEmpty()) {
-        <%int cpt = Integer.parseInt(valeur); %>
+        int cpt = Integer.parseInt(valeur); 
         for (int i = 0; i < cpt; i++) {
             for (int j = 0; j < cpt; j++) {
                 out.print("*");
@@ -50,7 +50,7 @@
 <p>
 <%  
 if (valeur != null && !valeur.isEmpty()) {
-    <%int cpt = Integer.parseInt(valeur); %>
+    int cpt = Integer.parseInt(valeur);
     for (int i = 1; i <= cpt; i++) {
         for (int j = 0; j < i; j++) {
             System.out.print("*");
