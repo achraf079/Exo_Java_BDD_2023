@@ -51,9 +51,9 @@ String valeurC = request.getParameter("valeurC");
 
 if (valeurA != null && valeurB != null && valeurC != null) { 
 
-    int valeurA = Integer.parseInt(valeurA);
-    int valeurB = Integer.parseInt(valeurB);
-    int valeurC = Integer.parseInt(valeurC);
+    int IntvaleurA = Integer.parseInt(valeurA);
+    int IntvaleurB = Integer.parseInt(valeurB);
+    int IntvaleurC = Integer.parseInt(valeurC);
 
     if ((valeurC >= valeurA && valeurC <= valeurB) || (valeurC >= valeurB && valeurC <= valeurA)) {
         out.print("La valeur de C est comprise entre A et B.");
@@ -75,7 +75,7 @@ if (valeurA != null && valeurB != null && valeurC != null) {
 String valeur = request.getParameter("valeur1");
 if (valeur1 != null) {
 
-        int valeur1 = Integer.parseInt(valeur1);
+        int Intvaleur1 = Integer.parseInt(valeur1);
 
         if (valeur1 % 2 == 0) {
             out.print("<p>Le nombre " + valeur1 + " est pair.</p>");
