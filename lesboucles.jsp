@@ -36,9 +36,9 @@
         int cpt = Integer.parseInt(valeur); 
         for (int i = 0; i < cpt; i++) {
             for (int j = 0; j < cpt; j++) {
-                System.out.print("*");
+                out.print("*");
             }
-            System.out.println("<br>");
+            out.println("<br>");
         }
     }
 %>
@@ -53,9 +53,9 @@ if (valeur != null && !valeur.isEmpty()) {
     int cpt = Integer.parseInt(valeur);
     for (int i = 1; i <= cpt; i++) {
         for (int j = 0; j < i; j++) {
-            System.out.print("*");
+            out.print("*");
         }
-        System.out.println();
+        out.println();
     }
 }
 
@@ -72,9 +72,9 @@ if (valeur != null && !valeur.isEmpty()) {
     int cpt = Integer.parseInt(valeur);
     for (int i = cpt; i > 0; i--) {
         for (int j = 0; j < i; j++) {
-            System.out.print("*");
+            out.print("*");
         }
-        System.out.println();
+        out.println();
     }
 }
 %> 
@@ -92,14 +92,14 @@ if (valeur != null && !valeur.isEmpty()) {
     int cpt = Integer.parseInt(valeur);
     for (int i = 1; i <= cpt; i++) {
         for (int j = 0; j < cpt - i; j++) {
-        System.out.print(" ");
+        out.print(" ");
         }
 
         for (int j = 0; j < i; j++) {
-        System.out.print("*");
+        out.print("*");
         }
     }
-    System.out.println();
+    out.println();
 
 }
 %>
@@ -121,13 +121,13 @@ if (valeur != null && !valeur.isEmpty()) {
     for (int i = 1; i <= cpt; i++) {
 
         for (int j = 0; j < cpt - i; j++) {
-            System.out.print(" ");
+            out.print(" ");
         }
 
         for (int j = 0; j < 2 * i - 1; j++) {
-            System.out.print("*");
+            out.print("*");
         }
-        System.out.println();
+        out.println();
     }
 }
 %>
@@ -148,22 +148,22 @@ if (valeur != null && !valeur.isEmpty()) {
     int cpt = Integer.parseInt(valeur);
     for (int i = 1; i <= cpt; i++) {
         for (int j = 0; j < cpt - i; j++) {
-            System.out.print(" ");
+            out.print(" ");
         }
         for (int j = 0; j < i; j++) {
-            System.out.print("*");
+            out.print("*");
         }
-        System.out.println();
+        out.println();
     }
 
     for (int i = cpt - 1; i > 0; i--) {
         for (int j = 0; j < cpt - i; j++) {
-            System.out.print(" ");
+            out.print(" ");
         }
         for (int j = 0; j < i; j++) {
-            System.out.print("*");
+            out.print("*");
         }
-        System.out.println();
+      out.println();
     }
 }
 
@@ -182,7 +182,7 @@ if (valeur != null && !valeur.isEmpty()) {
 if (valeur != null && !valeur.isEmpty()) {
     int cpt = Integer.parseInt(valeur);
     for (int i = 1; i <= 10; i++) {
-        System.out.println(cpt + " x " + i + " = " + (cpt * i));
+        out.println(cpt + " x " + i + " = " + (cpt * i));
     }
 }
 %>
