@@ -17,7 +17,7 @@
         <%-- Obtention de la longueur de la chaîne --%>
         <% int longueurChaine = chaine.length(); %>
         <p>La longueur de votre chaîne est de <%= longueurChaine %> caractères</p>
-        
+
     <%-- Extraction du 3° caractère dans votre chaine --%>
     <% char caractereExtrait = chaine.charAt(2); %>
     <p>Le 3° caractère de votre chaine est la lettre <%= caractereExtrait %></p>
@@ -37,17 +37,19 @@
 
 <%
 
+<%
 int compteur = 0;
 
 chaine = chaine.toLowerCase();
 
 for (int i = 0; i < chaine.length(); i++) {
-    if (chaine.charAt(i) == 'e') compteur++;
+    if (chaine.charAt(i) == 'e') {
+        compteur++;
+    }
 }
-
-System.out.println("Nombre de 'e' : " + compteur);
-
 %>
+
+<p>Le nombre de lettres 'e' dans la chaîne est : <%= compteur %></p>
 
 
 
@@ -57,7 +59,7 @@ Exemple : Bonjour</br>
 <%
 
 for (char lettre : chaine.toCharArray()) {
-    System.out.println(chaine);
+    out.println(lettre);
 }
 
 %>
@@ -65,9 +67,11 @@ for (char lettre : chaine.toCharArray()) {
 <h2>Exercice 3 : Retour à la ligne</h2>
 <p>La présence d'un espace provoque un retour à la ligne </br>
 Exemple : L'hiver sera pluvieux</br>
-L'hiver</br>
-sera</br>
-pluvieux</p>
+
+String[] mots = chaine.split(" ");
+for (String mot : mots) {
+    System.out.println(mot);
+}
 
 <h2>Exercice 4 : Afficher une lettre sur deux</h2>
 <p>Ecrire le programme pour afficher seulement une lettre sur deux de votre texte </br>
