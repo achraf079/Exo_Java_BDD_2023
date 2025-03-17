@@ -143,7 +143,7 @@ if (valeur != null && !valeur.isEmpty()) {
 
 
 <p>
-    <%  
+<%  
 if (valeur != null && !valeur.isEmpty()) {
     int cpt = Integer.parseInt(valeur);
     for (int i = 1; i <= cpt; i++) {
@@ -160,7 +160,7 @@ if (valeur != null && !valeur.isEmpty()) {
         for (int j = 0; j < cpt - i; j++) {
             System.out.print(" ");
         }
-        for (int j = 0; j <; j++) {
+        for (int j = 0; j < i; j++) {
             System.out.print("*");
         }
         System.out.println();
@@ -168,6 +168,7 @@ if (valeur != null && !valeur.isEmpty()) {
 }
 
 %>
+
 </p>
 
 
