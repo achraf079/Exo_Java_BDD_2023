@@ -64,7 +64,7 @@
 <p>
     
 <%    
-<%int cpt = Integer.parseInt(valeur); %>
+int cpt = Integer.parseInt(valeur);
 for (int i = cpt; i > 0; i--) {
         for (int j = 0; j < i; j++) {
             System.out.print("*");
