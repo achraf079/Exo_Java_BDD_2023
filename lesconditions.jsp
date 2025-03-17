@@ -72,15 +72,15 @@ if (valeurA != null && valeurB != null && valeurC != null) {
     <p><input type="submit" value="Afficher">
 <%
 
-String valeur = request.getParameter("valeur1");
-if (valeur1 != null) {
+String valeur = request.getParameter("valeur");
+if (valeur != null) {
 
-        int Intvaleur1 = Integer.parseInt(valeur1);
+        int Intvaleur = Integer.parseInt(valeur);
 
-        if (Intvaleur1 % 2 == 0) {
-            out.print("<p>Le nombre " + Intvaleur1 + " est pair.</p>");
+        if (Intvaleur % 2 == 0) {
+            out.print("<p>Le nombre " + Intvaleur + " est pair.</p>");
         } else {
-            out.print("<p>Le nombre " + Intvaleur1 + " est impair.</p>");
+            out.print("<p>Le nombre " + Intvaleur + " est impair.</p>");
         }
 }
 %>
