@@ -78,9 +78,9 @@ if (valeur1 != null) {
         int Intvaleur1 = Integer.parseInt(valeur1);
 
         if (Intvaleur1 % 2 == 0) {
-            out.print("<p>Le nombre " + valeur1 + " est pair.</p>");
+            out.print("<p>Le nombre " + Intvaleur1 + " est pair.</p>");
         } else {
-            out.print("<p>Le nombre " + valeur1 + " est impair.</p>");
+            out.print("<p>Le nombre " + Intvaleur1 + " est impair.</p>");
         }
 }
 %>
