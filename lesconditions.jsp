@@ -26,7 +26,7 @@
         <% } else if (intValeur1 < intValeur2) { %>
             <p>Valeur 1 est inférieure à Valeur 2.</p>
         <% } else { %>
-            <p>Valeur 1 est égale à Valeur 2.</p>
+            <p> <% intValeur1 %>  est égale à <% intValeur2 %>.</p>
         <% } %>
    
     
