@@ -105,14 +105,38 @@ StringBuilder resultat = new StringBuilder();
 Exemple : L'hiver sera pluvieux</br>
 xueivulp ares revih'l</p>
 
+<%
 
+String inverse = new StringBuilder(chaine).reverse().toString();
+System.out.println(inverse); 
 
-
+%>
 
 
 
 <h2>Exercice 6 : Consonnes et voyelles</h2>
 <p>Ecrire le programme afin de compter les consonnes et les voyelles dans votre texte</p>
+
+<%
+
+
+int voyelles = 0, consonnes = 0;
+        texte = texte.toLowerCase();
+        
+        for (char c : chaine.toCharArray()) {
+            if (Character.isLetter(c)) {
+                if ("aeiou".contains(String.valueOf(c))) {
+                    voyelles++;
+                } else {
+                    consonnes++;
+                }
+            }
+        }
+        
+        System.out.println("Voyelles : " + voyelles); // 8
+        System.out.println("Consonnes : " + consonnes); // 10
+
+%>
 
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
