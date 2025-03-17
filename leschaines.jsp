@@ -36,6 +36,9 @@
 <p>Ecrire un programme pour compter le nombre de lettre e dans votre chaine de charactères</p>
 
 <%
+
+print("<p>La chaîne de caractères est : " + chaine + "</p>");
+
 int compteur = 0;
 
 chaine = chaine.toLowerCase();
