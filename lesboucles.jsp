@@ -30,7 +30,6 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 
 <p>
-    <% String valeur = request.getParameter("valeur"); %>
          <% if (valeur != null && !valeur.isEmpty()) { %>
             <% for (int i = 0; i < cpt; i++) { %>
                 <% for (int j = 0; j < cpt; j++) { %>
@@ -44,7 +43,12 @@
 <h2>Exercice 2 : Triangle rectangle gauche</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
-<p>*</br>**</br>***</br>****</br>*****</p>
+<p>
+    
+
+
+    
+</p>
 
 <h2>Exercice 3 : Triangle rectangle inversé</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
