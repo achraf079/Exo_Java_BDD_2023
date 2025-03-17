@@ -33,8 +33,8 @@
     <% String valeur = request.getParameter("valeur"); %>
          <% if (valeur != null && !valeur.isEmpty()) { %>
             <% int cpt = Integer.parseInt(valeur); %>
-            <% for (int i = 0; i < valeur; i++) { %>
-                <% for (int j = 0; j < valeur; j++) { %>
+            <% for (int i = 0; i < cpt; i++) { %>
+                <% for (int j = 0; j < cpt; j++) { %>
                     <%     System.out.print("*"); %>
                     <% } %>
                     <% System.out.println(); %>
