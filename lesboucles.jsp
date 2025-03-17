@@ -31,12 +31,15 @@
 
 <p>
     <pre><code>
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                System.out.print("*");
-            }
-            System.out.println();
-        }
+         if (valeur != null && !valeur.isEmpty()) { 
+                int cpt = Integer.parseInt(valeur); 
+                for (int i = 0; i < n; i++) {
+                    for (int j = 0; j < n; j++) {
+                        System.out.print("*");
+                    }
+                    System.out.println();
+                }
+            } 
     </code></pre>
 
 </p>
