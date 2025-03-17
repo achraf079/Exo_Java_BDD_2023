@@ -23,7 +23,6 @@
     <% for (int i = 1; i <= cpt; i++) { %>
        <%= "*" %>
     <% } %>
-<% } %>
     </p>
 
 <h2>Exercice 1 : Le carré d'étoiles</h2>
@@ -117,7 +116,7 @@
         for (int j = 0; j < cpt - i; j++) {
             out.print(" ");
         }
-
+dzdz
         for (int j = 0; j < 2 * i - 1; j++) {
             out.print("*");
         }
@@ -179,6 +178,7 @@
 %>
 </p>
 
+<% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
 </body>
 </html>
