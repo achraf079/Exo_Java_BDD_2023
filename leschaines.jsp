@@ -35,16 +35,33 @@
 <h2>Exercice 1 : Combien de 'e' dans notre chaine de charactère ?</h2>
 <p>Ecrire un programme pour compter le nombre de lettre e dans votre chaine de charactères</p>
 
+<%
+
+int compteur = 0;
+
+String chaine = request.getParameter("chaine");
+chaine = chaine.toLowerCase();
+
+for (int i = 0; i < chaine.length(); i++) {
+    if (chaine.charAt(i) == 'e') compteur++;
+}
+
+System.out.println("Nombre de 'e' : " + compteur);
+
+%>
+
+
+
 <h2>Exercice 2 : Affichage verticale</h2>
 <p>Ecrire le programme pour afficher le texte en vertical</br>
 Exemple : Bonjour</br>
-B</br>
-o</br>
-n</br>
-j</br>
-o</br>
-u</br>
-r</p>
+<%
+
+for (char lettre : chaine.toCharArray()) {
+    System.out.println(chaine);
+}
+
+%>
 
 <h2>Exercice 3 : Retour à la ligne</h2>
 <p>La présence d'un espace provoque un retour à la ligne </br>
