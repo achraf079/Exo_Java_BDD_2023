@@ -37,7 +37,7 @@
 
 <%
 
-print("<p>La chaîne de caractères est : " + chaine + "</p>");
+out.println("<p>La chaîne de caractères est : " + chaine);
 
 int compteur = 0;
 
