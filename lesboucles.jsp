@@ -55,9 +55,8 @@ if (valeur != null && !valeur.isEmpty()) {
         System.out.println();
     }
 }
-}
 
- %>   
+%>   
 </p>
 
 <h2>Exercice 3 : Triangle rectangle inversé</h2>
