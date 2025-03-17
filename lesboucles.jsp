@@ -30,14 +30,16 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 
 <p>
-         <% if (valeur != null && !valeur.isEmpty()) { %>
-            <% for (int i = 0; i < cpt; i++) { %>
-                <% for (int j = 0; j < cpt; j++) { %>
-                    <%     System.out.print("*"); %>
-                    <% } %>
-                    <% System.out.println(); %>
-        <% } %>
-        <% } %>
+    <%
+    if (valeur != null && !valeur.isEmpty()) {
+        for (int i = 0; i < cpt; i++) {
+            for (int j = 0; j < cpt; j++) {
+                out.print("*");
+            }
+            out.println("<br>");
+        }
+    }
+%>
 </p>
 
 <h2>Exercice 2 : Triangle rectangle gauche</h2>
