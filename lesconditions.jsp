@@ -36,13 +36,14 @@ A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
 </br>
 
 <form action="#" method="post">
-    <p>Saisir la valeur A : <input type="text" id="inputValeur" name="valeurA">
-    <p>Saisir la valeur B : <input type="text" id="inputValeur" name="valeurB">
-    <p>Saisir la valeur C : <input type="text" id="inputValeur" name="valeurC">
+    <p>Saisir la valeur A : <input type="text" id="valeurA" name="valeurA">
+    <p>Saisir la valeur B : <input type="text" id="valeurB" name="valeurB">
+    <p>Saisir la valeur C : <input type="text" id="valeurC" name="valeurC">
     <p><input type="submit" value="Afficher">
 </form>
 
 <%
+
 String valeurA = request.getParameter("valeurA"); 
 String valeurB = request.getParameter("valeurB");
 String valeurC = request.getParameter("valeurC");
@@ -55,9 +56,9 @@ if (valeurA != null && valeurB != null && valeurC != null) {
     int valeurC = Integer.parseInt(valeurC);
 
     if ((valeurC >= valeurA && valeurC <= valeurB) || (valeurC >= valeurB && valeurC <= valeurA)) {
-        sytem.out.println("La valeur de C est comprise entre A et B.");
+        out.print("La valeur de C est comprise entre A et B.");
     } else {
-        sytem.out.println("La valeur de C n'est pas comprise entre A et B.");
+        out.print("La valeur de C n'est pas comprise entre A et B.");
     }
 }
 
@@ -66,13 +67,15 @@ if (valeurA != null && valeurB != null && valeurC != null) {
 <h2>Exercice 2 : Pair ou Impair ?</h2>
 <p>Écrivez un programme pour vérifier si un nombre est pair ou impair en utilisant une structure if</p>
 
-<p>Utilisation de la valeur 1 donné par l'Utilisateur en haut de la page</p>
+<form action="#" method="post">
+    <p>Saisir un nombre : <input type="text" id="valeur" name="valeur">
+    <p><input type="submit" value="Afficher">
 <%
 
-String valeur1 = request.getParameter("valeur1");
+String valeur = request.getParameter("valeur1");
 if (valeur1 != null) {
 
-        int valeur1 = Integer.parseInt(nombreStr);
+        int valeur1 = Integer.parseInt(valeur1);
 
         if (valeur1 % 2 == 0) {
             out.print("<p>Le nombre " + valeur1 + " est pair.</p>");
