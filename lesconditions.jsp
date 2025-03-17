@@ -55,7 +55,7 @@ if (valeurA != null && valeurB != null && valeurC != null) {
     int IntvaleurB = Integer.parseInt(valeurB);
     int IntvaleurC = Integer.parseInt(valeurC);
 
-    if ((valeurC >= valeurA && valeurC <= valeurB) || (valeurC >= valeurB && valeurC <= valeurA)) {
+    if ((IntvaleurC >= IntvaleurA && IntvaleurC <= IntvaleurB) || (IntvaleurC >= IntvaleurB && IntvaleurC <= IntvaleurA)) {
         out.print("La valeur de C est comprise entre A et B.");
     } else {
         out.print("La valeur de C n'est pas comprise entre A et B.");
@@ -77,7 +77,7 @@ if (valeur1 != null) {
 
         int Intvaleur1 = Integer.parseInt(valeur1);
 
-        if (valeur1 % 2 == 0) {
+        if (Intvaleur1 % 2 == 0) {
             out.print("<p>Le nombre " + valeur1 + " est pair.</p>");
         } else {
             out.print("<p>Le nombre " + valeur1 + " est impair.</p>");
