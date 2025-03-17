@@ -114,6 +114,8 @@ if (valeur != null && !valeur.isEmpty()) {
 
 
 <p>
+
+<%  
 if (valeur != null && !valeur.isEmpty()) {
     int cpt = Integer.parseInt(valeur);
     for (int i = 1; i <= cpt; i++) {
@@ -128,6 +130,7 @@ if (valeur != null && !valeur.isEmpty()) {
         System.out.println();
     }
 }
+%>
 
 </p>
 
@@ -140,6 +143,7 @@ if (valeur != null && !valeur.isEmpty()) {
 
 
 <p>
+    <%  
 if (valeur != null && !valeur.isEmpty()) {
     int cpt = Integer.parseInt(valeur);
     for (int i = 1; i <= cpt; i++) {
@@ -156,12 +160,14 @@ if (valeur != null && !valeur.isEmpty()) {
         for (int j = 0; j < cpt - i; j++) {
             System.out.print(" ");
         }
-        for (int j = 0; j < i; j++) {
+        for (int j = 0; j <; j++) {
             System.out.print("*");
         }
         System.out.println();
     }
 }
+
+%>
 </p>
 
 
@@ -171,13 +177,14 @@ if (valeur != null && !valeur.isEmpty()) {
 
 
 <p>
+    <%  
 if (valeur != null && !valeur.isEmpty()) {
     int cpt = Integer.parseInt(valeur);
     for (int i = 1; i <= 10; i++) {
         System.out.println(cpt + " x " + i + " = " + (cpt * i));
     }
 }
-
+%>
 </p>
 
 <p><a href="index.html">Retour au sommaire</a></p>
