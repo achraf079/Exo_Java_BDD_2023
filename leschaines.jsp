@@ -85,9 +85,18 @@ for (String mot : mots_separe) {
 <p>Ecrire le programme pour afficher seulement une lettre sur deux de votre texte </br>
 Exemple : L'hiver sera pluvieux</br>
 Lhvrsr lvex</p>
+<%
+
+
+StringBuilder resultat = new StringBuilder();
+        for (int i = 0; i < chaine.length(); i += 2) {
+            resultat.append(chaine.charAt(i));
+        }
+        System.out.println(resultat);
 
 
 
+%>
 
 
 
