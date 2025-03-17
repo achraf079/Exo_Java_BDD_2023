@@ -70,8 +70,10 @@ for (char lettre : chaine.toCharArray()) {
 
 <h2>Exercice 3 : Retour à la ligne</h2>
 <p>La présence d'un espace provoque un retour à la ligne </br>
-    out.println("<strong>La chaîne de caractères est : " + chaine + "</strong><br>");
+
 <%
+
+out.println("<strong>La chaîne de caractères est : " + chaine + "</strong><br>");
 String[] mots_separe = chaine.split(" ");
 for (String mot : mots_separe) {
     out.println(mot + "<br>");
@@ -82,9 +84,11 @@ for (String mot : mots_separe) {
 
 <h2>Exercice 4 : Afficher une lettre sur deux</h2>
 <p>Ecrire le programme pour afficher seulement une lettre sur deux de votre texte </br>
-    out.println("<strong>La chaîne de caractères est : " + chaine + "</strong><br>");
+
 <%
 
+
+out.println("<strong>La chaîne de caractères est : " + chaine + "</strong><br>");
 StringBuilder lettre_sur2 = new StringBuilder();
         for (int i = 0; i < chaine.length(); i += 2) {
             lettre_sur2.append(chaine.charAt(i));
@@ -99,6 +103,8 @@ StringBuilder lettre_sur2 = new StringBuilder();
 <p>Ecrire le programme afin d'afficher le texte en verlant </br>
 
 <%
+
+
 out.println("<strong>La chaîne de caractères est : " + chaine + "</strong><br>");
 String inverse = new StringBuilder(chaine).reverse().toString();
 out.println(inverse);
@@ -109,9 +115,11 @@ out.println(inverse);
 
 <h2>Exercice 6 : Consonnes et voyelles</h2>
 <p>Ecrire le programme afin de compter les consonnes et les voyelles dans votre texte</p>
-out.println("<strong>La chaîne de caractères est : " + chaine + "</strong><br>");
+
 <%
 
+
+out.println("<strong>La chaîne de caractères est : " + chaine + "</strong><br>");
 int voyelles = 0, consonnes = 0;
         
 
