@@ -31,8 +31,6 @@
 
 <p>
 <%
-    if (valeur != null && !valeur.isEmpty()) {
-        int cpt = Integer.parseInt(valeur); 
         for (int i = 0; i < cpt; i++) {
             for (int j = 0; j < cpt; j++) {
                 out.print("*");
@@ -116,7 +114,7 @@
         for (int j = 0; j < cpt - i; j++) {
             out.print(" ");
         }
-dzdz
+        
         for (int j = 0; j < 2 * i - 1; j++) {
             out.print("*");
         }
