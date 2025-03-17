@@ -90,8 +90,8 @@
         for (int j = 0; j < i; j++) {
         out.print("*");
         }
+        out.print("<br>");
     }
-    out.println("<br>");
 
 %>
 </p>
@@ -117,7 +117,7 @@
         for (int j = 0; j < 2 * i - 1; j++) {
             out.print("*");
         }
-        out.println("<br>");
+        out.print("<br>");
     }
 
 %>
@@ -142,7 +142,7 @@
         for (int j = 0; j < i; j++) {
             out.print("*");
         }
-        out.println();
+        out.print();
     }
 
     for (int i = cpt - 1; i > 0; i--) {
@@ -152,7 +152,7 @@
         for (int j = 0; j < i; j++) {
             out.print("*");
         }
-      out.println("<br>");
+      out.print("<br>");
     }
 
 
@@ -168,7 +168,7 @@
 
 <p>
     <%  
-    for (int i = 1; i <= 10; i++) {
+    for (int i = 1; i <= cpt; i++) {
         out.println(cpt + " x " + i + " = " + (cpt * i) + "<br>");
     }
 
