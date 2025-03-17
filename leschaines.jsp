@@ -39,7 +39,6 @@
 
 int compteur = 0;
 
-String chaine = request.getParameter("chaine");
 chaine = chaine.toLowerCase();
 
 for (int i = 0; i < chaine.length(); i++) {
