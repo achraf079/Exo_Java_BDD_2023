@@ -12,12 +12,12 @@
 <%-- Récupération des valeurs --%>
     <% String chaine = request.getParameter("chaine"); %>
     
-    <% if (chaine != null) { %>
+    <% if (chaine != null && !chaine.isEmpty()) { %>
 
-    <%-- Obtention de la longueur de la chaîne --%>
-    <% int longueurChaine = chaine.length(); %>
-    <p>La longueur de votre chaîne est de <%= longueurChaine %> caractères</p>
-
+        <%-- Obtention de la longueur de la chaîne --%>
+        <% int longueurChaine = chaine.length(); %>
+        <p>La longueur de votre chaîne est de <%= longueurChaine %> caractères</p>
+        
     <%-- Extraction du 3° caractère dans votre chaine --%>
     <% char caractereExtrait = chaine.charAt(2); %>
     <p>Le 3° caractère de votre chaine est la lettre <%= caractereExtrait %></p>
