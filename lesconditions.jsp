@@ -72,12 +72,12 @@ if (valeurA != null && valeurB != null && valeurC != null) {
 String valeur1 = request.getParameter("valeur1");
 if (valeur1 != null) {
 
-        int nombre = Integer.parseInt(nombreStr);
+        int valeur1 = Integer.parseInt(nombreStr);
 
         if (valeur1 % 2 == 0) {
-            out.print("<p>Le nombre " + nombre + " est pair.</p>");
+            out.print("<p>Le nombre " + valeur1 + " est pair.</p>");
         } else {
-            out.print("<p>Le nombre " + nombre + " est impair.</p>");
+            out.print("<p>Le nombre " + valeur1 + " est impair.</p>");
         }
 }
 %>
