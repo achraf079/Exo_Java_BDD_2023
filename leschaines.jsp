@@ -55,7 +55,6 @@ for (int i = 0; i < chaine.length(); i++) {
 
 <h2>Exercice 2 : Affichage verticale</h2>
 <p>Ecrire le programme pour afficher le texte en vertical</br>
-Exemple : Bonjour</br>
 <%
 
 for (char lettre : chaine.toCharArray()) {
@@ -82,11 +81,11 @@ for (String mot : mots_separe) {
 
 <%
 
-StringBuilder resultat = new StringBuilder();
+StringBuilder lettre_sur2 = new StringBuilder();
         for (int i = 0; i < chaine.length(); i += 2) {
-            resultat.append(chaine.charAt(i));
+            lettre_sur2.append(chaine.charAt(i));
         }
-        System.out.println(resultat);
+        out.println(lettre_sur2.toString());
 
 %>
 
@@ -98,7 +97,7 @@ StringBuilder resultat = new StringBuilder();
 <%
 
 String inverse = new StringBuilder(chaine).reverse().toString();
-System.out.println(inverse); 
+out.println(inverse);
 
 %>
 
@@ -110,20 +109,25 @@ System.out.println(inverse);
 <%
 
 int voyelles = 0, consonnes = 0;
+        
+
 chaine = chaine.toLowerCase();
-        
-        for (char c : chaine.toCharArray()) {
-            if (Character.isLetter(c)) {
-                if ("aeiou".contains(String.valueOf(c))) {
-                    voyelles++;
-                } else {
-                    consonnes++;
-                }
-            }
+
+
+for (char c : chaine.toCharArray()) {
+
+    if (Character.isLetter(c)) {
+
+        if ("aeiou".contains(String.valueOf(c))) {
+            voyelles++;
+        } else {
+            consonnes++;
         }
-        
-        System.out.println("Voyelles : " + voyelles); // 8
-        System.out.println("Consonnes : " + consonnes); // 10
+    }
+}
+
+out.println("Voyelles : " + voyelles); 
+out.println("Consonnes : " + consonnes);  
 
 %>
 
