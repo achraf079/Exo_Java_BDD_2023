@@ -142,7 +142,7 @@
         for (int j = 0; j < i; j++) {
             out.print("*");
         }
-        out.print();
+        out.print("<br>");
     }
 
     for (int i = cpt - 1; i > 0; i--) {
