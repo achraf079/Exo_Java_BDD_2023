@@ -65,13 +65,14 @@ if (valeur != null && !valeur.isEmpty()) {
 <p>
     
 <%    
-
+if (valeur != null && !valeur.isEmpty()) {
 for (int i = cpt; i > 0; i--) {
         for (int j = 0; j < i; j++) {
             System.out.print("*");
         }
         System.out.println();
     }
+}
 %> 
 </p>
 
@@ -83,7 +84,7 @@ for (int i = cpt; i > 0; i--) {
 
 <%    
 
-
+if (valeur != null && !valeur.isEmpty()) {
 for (int i = 1; i <= cpt; i++) {
 
     for (int j = 0; j < cpt - i; j++) {
@@ -94,6 +95,7 @@ for (int i = 1; i <= cpt; i++) {
         System.out.print("*");
     }
     System.out.println();
+}
 }
 
 
@@ -109,7 +111,7 @@ for (int i = 1; i <= cpt; i++) {
 
 
 <p>
-
+if (valeur != null && !valeur.isEmpty()) {
     for (int i = 1; i <= cpt; i++) {
 
         for (int j = 0; j < cpt - i; j++) {
@@ -121,6 +123,7 @@ for (int i = 1; i <= cpt; i++) {
         }
         System.out.println();
     }
+}
 
 </p>
 
@@ -133,6 +136,7 @@ for (int i = 1; i <= cpt; i++) {
 
 
 <p>
+if (valeur != null && !valeur.isEmpty()) {
     for (int i = 1; i <= cpt; i++) {
         for (int j = 0; j < cpt - i; j++) {
             System.out.print(" ");
@@ -152,6 +156,7 @@ for (int i = 1; i <= cpt; i++) {
         }
         System.out.println();
     }
+}
 </p>
 
 
@@ -161,10 +166,11 @@ for (int i = 1; i <= cpt; i++) {
 
 
 <p>
-
+if (valeur != null && !valeur.isEmpty()) {
     for (int i = 1; i <= 10; i++) {
         System.out.println(cpt + " x " + i + " = " + (cpt * i));
     }
+}
 
 </p>
 
