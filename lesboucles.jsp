@@ -36,8 +36,9 @@
         int cpt = Integer.parseInt(valeur); 
         for (int i = 0; i < cpt; i++) {
             for (int j = 0; j < cpt; j++) {
-                out.print("*");
+                System.out.print("*");
             }
+            System.out.println("<br>");
         }
     }
 %>
@@ -54,6 +55,7 @@ if (valeur != null && !valeur.isEmpty()) {
         for (int j = 0; j < i; j++) {
             System.out.print("*");
         }
+        System.out.println();
     }
 }
 
