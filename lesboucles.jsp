@@ -30,9 +30,15 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 
 <p>
-    <% for (int i = 1; i <= cpt; i++) { %>
-        <%= "*" %>
-     <% } %>
+    <pre><code>
+        <% for (int i = 1; i <= cpt; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print("*");
+            } %>
+            <%= "*" %>
+         <% } %>
+    </code></pre>
+
 </p>
 
 <h2>Exercice 2 : Triangle rectangle gauche</h2>
