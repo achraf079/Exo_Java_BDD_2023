@@ -63,8 +63,9 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>
     
-    <%    
-    for (int i = cpt; i > 0; i--) {
+<%    
+<%int cpt = Integer.parseInt(valeur); %>
+for (int i = cpt; i > 0; i--) {
         for (int j = 0; j < i; j++) {
             System.out.print("*");
         }
