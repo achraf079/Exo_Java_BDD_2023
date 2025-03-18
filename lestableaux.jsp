@@ -86,10 +86,22 @@ out.println("La valeur la plus proche de 0 est : " + Math.min(distance, Math.min
 <p>Trouvez la valeur la plus proche de 0 (chiffres positifs ou négatifs)</p>
 <p>En cas d'égalité entre un chiffre positif et négatif, affichez le chiffre positif</p>
 
+<%
+
+String[] valeurs = valeursStr.split(",");
+double valeurPlusProcheDeZero = Double.MAX_VALUE;
+for (String valeur : valeurs) {
+    double val = Double.parseDouble(valeur.trim());
+    if (Math.abs(val) < Math.abs(valeurPlusProcheDeZero)) {
+        valeurPlusProcheDeZero = val;
+    } else if (Math.abs(val) == Math.abs(valeurPlusProcheDeZero) && val > 0) {
+        valeurPlusProcheDeZero = val;
+    }
+}
+out.println("La valeur la plus proche de 0 est : " + valeurPlusProcheDeZero);
 
 
-
-
+%>
 
 
 <% } %>
